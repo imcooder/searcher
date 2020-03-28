@@ -1,2 +1,2 @@
 # searcher
-like everything for window
+faster searcher for window like everything， as open-source
