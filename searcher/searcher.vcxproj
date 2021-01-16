@@ -75,6 +75,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>D:\dev\boost_1_70_0;$(SolutionDir);$(ProjectDir);$(IncludePath)</IncludePath>
+    <ReferencePath>$(ReferencePath)</ReferencePath>
+    <LibraryPath>D:\dev\boost_1_70_0\stage\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -101,9 +104,10 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;BOOST_USE_WINDOWS_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -147,13 +151,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="bdlog\bdassert.h" />
+    <ClInclude Include="bdlog\bdlog.h" />
+    <ClInclude Include="bdlog\compilerconf.h" />
+    <ClInclude Include="bdlog\logconf.h" />
+    <ClInclude Include="bdlog\log_interface.h" />
+    <ClInclude Include="DiskHandler\DirFilterList.h" />
+    <ClInclude Include="DiskHandler\DiskHandler.h" />
+    <ClInclude Include="DiskHandler\NameSort.h" />
+    <ClInclude Include="DiskHandler\Record.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="MainProcess.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="pubdefine.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="searcher.h" />
     <ClInclude Include="targetver.h" />
+    <ClInclude Include="Utility\StringUtility.h" />
+    <ClInclude Include="Utility\string_match.h" />
+    <ClInclude Include="Utility\string_match_bm.h" />
+    <ClInclude Include="Utility\SWMRG.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DiskHandler\DirFilterList.cpp" />
+    <ClCompile Include="DiskHandler\DiskHandler.cpp" />
+    <ClCompile Include="DiskHandler\NameSort.cpp" />
+    <ClCompile Include="DiskHandler\Record.cpp" />
+    <ClCompile Include="MainProcess.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
@@ -161,6 +185,10 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="searcher.cpp" />
+    <ClCompile Include="Utility\StringUtility.cpp" />
+    <ClCompile Include="Utility\string_match.cpp" />
+    <ClCompile Include="Utility\string_match_bm.cpp" />
+    <ClCompile Include="Utility\SWMRG.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="searcher.rc" />

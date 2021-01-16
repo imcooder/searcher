@@ -13,6 +13,15 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="DiskHandler">
+      <UniqueIdentifier>{f05dc9ee-6278-4b67-8cb7-db084d41ecd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="bdlog">
+      <UniqueIdentifier>{bdb64366-31cf-4ade-b957-e8b34e9189a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utility">
+      <UniqueIdentifier>{300dc78d-92a6-4717-84f2-720352ea2518}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="framework.h">
@@ -30,12 +39,84 @@
     <ClInclude Include="pch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="DiskHandler\DirFilterList.h">
+      <Filter>DiskHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskHandler\DiskHandler.h">
+      <Filter>DiskHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskHandler\NameSort.h">
+      <Filter>DiskHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="DiskHandler\Record.h">
+      <Filter>DiskHandler</Filter>
+    </ClInclude>
+    <ClInclude Include="pubdefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="bdlog\bdassert.h">
+      <Filter>bdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="bdlog\bdlog.h">
+      <Filter>bdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="bdlog\compilerconf.h">
+      <Filter>bdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="bdlog\log_interface.h">
+      <Filter>bdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="bdlog\logconf.h">
+      <Filter>bdlog</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\StringUtility.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\SWMRG.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\string_match.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility\string_match_bm.h">
+      <Filter>Utility</Filter>
+    </ClInclude>
+    <ClInclude Include="MainProcess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="searcher.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskHandler\DirFilterList.cpp">
+      <Filter>DiskHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskHandler\DiskHandler.cpp">
+      <Filter>DiskHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskHandler\NameSort.cpp">
+      <Filter>DiskHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="DiskHandler\Record.cpp">
+      <Filter>DiskHandler</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\StringUtility.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\SWMRG.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\string_match.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility\string_match_bm.cpp">
+      <Filter>Utility</Filter>
+    </ClCompile>
+    <ClCompile Include="MainProcess.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

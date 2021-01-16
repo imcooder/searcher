@@ -7,7 +7,11 @@
 #ifndef PCH_H
 #define PCH_H
 
+#include <windows.h>
 // 添加要在此处预编译的标头
-#include "framework.h"
+#include <assert.h>
 
-#endif //PCH_H
+#include <new>
+
+#include "framework.h"
+#endif  // PCH_H
